@@ -11,9 +11,10 @@ spec:
     repository: https://charts.cloudposse.com/incubator/
     name: monochart
     version: 0.23.2
+
   values:
     image:
-      repository: caddy
+      repository: nginx
       tag: alpine
 
     deployment:
@@ -24,4 +25,4 @@ spec:
       ports:
         default:
           internal: 80
-          external: 10080
+          external: 80
