@@ -8,10 +8,20 @@ metadata:
     filter.fluxcd.io/chart-image: semver:~0.3
 spec:
   chart:
-    repository: https://alexellis.github.io/expressjs-k8s/
-    name: expressjs-k8s
-    version: 0.1.1
+    repository: https://charts.cloudposse.com/incubator/
+    name: monochart
+    version: 0.23.2
   values:
-    ingress:
-      enabled: false
-    image: alexellis2/service:0.3.7
+    image:
+      repository: caddy
+      tag: alpine
+
+    deployment:
+      enabled: true
+
+    service:
+      enabled: true
+      ports:
+        default:
+          internal: 80
+          external: 10080
