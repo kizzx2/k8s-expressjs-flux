@@ -5,7 +5,6 @@ metadata:
   name: expressjs-k8s
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~0.3
 spec:
   chart:
     repository: https://charts.cloudposse.com/incubator/
