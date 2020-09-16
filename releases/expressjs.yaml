@@ -14,7 +14,7 @@ spec:
   values:
     image:
       repository: nginx
-      tag: alpine
+      tag: 1.18-perl
 
     deployment:
       enabled: true
